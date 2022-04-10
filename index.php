@@ -1,3 +1,6 @@
+<?php 
+include ("scripts/erros.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -22,20 +25,38 @@
     </div>
     <div class="form-group"  >
         <label for="text">Digite o Dia do seu aniverssário</label>
-        <input type="number" class="form-control" name="dia" aria-describedby="numeric" placeholder="Dia">
+        <input type="number" class="form-control" name="dia" aria-describedby="numeric" placeholder="Ex: 29">
     </div>
     <div class="form-group"  >
         <label for="text">Digite o Mes do seu aniverssário</label>
-        <input type="number" class="form-control" name="mes" aria-describedby="numeric" placeholder="Mes">
+        <input type="number" class="form-control" name="mes" aria-describedby="numeric" placeholder="Ex: 1">
     </div>
     <div class="form-group"  >
         <label for="text">Digite o Ano do seu aniverssário</label>
-        <input type="number" class="form-control" name="ano" aria-describedby="numeric" placeholder="Ano">
+        <input type="number" class="form-control" name="ano" aria-describedby="numeric" placeholder="Ex: 1998">
     </div>
     <button type="submit" class="btn btn-primary">Continuar</button>
     </form>
   </div>
 </div>
+<br>
+<div><div class="card">
+  <div class="card-body">
+  <h3><?php
+    $sucesso=obterMsgSucesso();     
+    if(!empty($sucesso))
+    {
+        echo($sucesso);
+    };
+    $erro=obterMsgErro();
+    if(!empty($erro))
+    {
+        echo($erro);
+    };
+    ?>
+  </div>
+  
+
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
