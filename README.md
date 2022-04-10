@@ -4,7 +4,9 @@
 
     - Criado com o ituito de calcular a quantidade de tempo a partir de 
         uma data inserida pela usuario através do formulário.
+
     -Calcula os anos, meses e dias.
+    
     -Calcula a quantidade total em dias.
 
 
@@ -37,4 +39,3 @@
     - Gabriel Arcangelo de Lima
     - https://github.com/hektorsof/
     - 10/04/2022
-    
